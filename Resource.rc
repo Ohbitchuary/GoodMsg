@@ -1,0 +1,35 @@
+#include <windows.h>
+
+// Version Information
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK  0x3fL
+#ifdef _DEBUG
+FILEFLAGS      0x1L
+#else
+FILEFLAGS      0x0L
+#endif
+FILEOS         VFT_APP
+FILETYPE       VFT_APP
+FILESUBTYPE    0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0" // US English, Unicode
+        BEGIN
+            VALUE "CompanyName",      "Nova"
+            VALUE "FileDescription",  "GoodMsg Weekly Support"
+            VALUE "FileVersion",      "1.0.0.0"
+            VALUE "InternalName",     "GoodMsg.exe"
+            VALUE "LegalCopyright",   "Copyright (C) 2026 Nova"
+            VALUE "OriginalFilename", "GoodMsg.exe"
+            VALUE "ProductName",      "GoodMsg"
+            VALUE "ProductVersion",   "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
